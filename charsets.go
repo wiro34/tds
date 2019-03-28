@@ -76,3 +76,8 @@ func getEncoding(sybName string) (encoding.Encoding, error) {
 	}
 	return nil, fmt.Errorf("netlib: unsupported charset: %s", sybName)
 }
+
+// RegisterEncoding register encoding for the charset
+func RegisterEncoding(sybaseCharsetName string, e encoding.Encoding) {
+	nameToCharset[sybaseCharsetName] = e
+}
