@@ -1,4 +1,4 @@
-module github.com/thda/tds
+module github.com/wiro34/tds
 
 require (
 	github.com/chzyer/logex v1.1.10 // indirect
